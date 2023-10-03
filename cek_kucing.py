@@ -1,15 +1,13 @@
 def checkCats(CatsTuti, CatsNining):
-    kucing_tuti = CatsTuti[:]
+    kucing_tuti = CatsTuti
     del kucing_tuti[0]
     del kucing_tuti[-2:]
-
-    kucing_nining = CatsNining
-
-    data_umur_kucing = kucing_tuti + kucing_nining
+    
+    data_umur_kucing = kucing_tuti + CatsNining
 
     for i, umur in enumerate(data_umur_kucing, start=1):
         if umur >= 3:
-            print(f"Kucing nomor {i} adalah Kucing Dewasa, dan berusia {umur} tahun")
+            print(f"Kucing nomor {i} adalah Kucing Dewasa dan berusia {umur} tahun")
         else:
             print(f"Kucing nomor {i} masih anak-anak")
 
